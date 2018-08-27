@@ -1,5 +1,7 @@
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports =(env)=>{
     const isProduction = env === 'production';
@@ -35,7 +37,7 @@ module.exports =(env)=>{
                 })
             }]
         },
-        plugin: [
+        plugins: [
             CSSExtract
         ],
         devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
