@@ -1,0 +1,129 @@
+.new_menu{
+    
+    grid-row: 4/5;
+    grid-column: 1/-1;
+   
+    align-self: flex-start;
+    justify-self: center;
+ 
+}
+
+.vert_menu{
+    background-color: black;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+}
+.footer_menu{
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto 1fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4b453a;
+    height:100px;
+    z-index: 6;
+}
+.small_instructor_button{
+    grid-column: 3/4;
+}
+.small_schedule_button{
+    grid-column: 4/5;
+}
+.small_menu_button{
+    height: 100px;
+    background-color: #4b453a;
+
+}
+
+.small_styles_button{
+    grid-column: 2/3;
+}
+.small_find_us_button{
+    grid-column: 5/6;
+}
+.small_button_image{
+    height: auto;
+    width: 51px;
+    padding: 14px;
+    padding-top: 20px;
+}
+.small_find_us_image{
+    width: 41px;
+    margin-top: -2px;
+}
+.menu_button{
+    background-color: #4b453a;
+    width: 100%;
+    height: 60px;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 30% 40px auto 14%; 
+}
+
+.find_us_button{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    grid-row: -2/-1;
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr 1fr 1fr 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.address{
+    grid-column: 1/5;
+    grid-row: 2/-1;
+    text-align: center;
+    text-justify: center;
+    font-family: "brother-1816",sans-serif;
+    z-index: 3;
+    color: white;
+    font-size: 1.6rem;
+}
+.map{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    height:100%;
+    width:auto;
+    border: 1px solid white;
+    height: -moz-min-content;
+    width: inherit;
+}
+.map_overlay{
+    grid-column: 1/5;
+    grid-row: 1/-1;
+    height: 100%;
+    width:auto;
+    background-color: gray;
+    z-index: 2;
+    opacity: .3; 
+}
+.styles_button{
+    grid-row: 1/2;
+}
+.bg{
+    display: none;
+}
+.button_image{
+    grid-column: 2/3;
+    height: 70%;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+}
+.button_text{
+ grid-column: 3/4;
+ color: white;
+ font-style: normal;
+    font-weight: 700;
+ align-self: center;
+ justify-self: center;
+ font-family: "brother-1816",sans-serif;
+margin:0;
+font-size: 2rem;
+}
+

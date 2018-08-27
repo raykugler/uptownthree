@@ -1,0 +1,193 @@
+.instructors_page{
+    
+    background: linear-gradient(to bottom right, #e222e4, #000000);
+ height: 133vh;
+}
+.instructors{
+    display: grid;
+    grid-template-rows: 80px auto auto auto auto 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25px auto 20px;
+    height: 100%;
+   
+}
+
+.classes_taught_on{
+    font-family: "brother-1816",sans-serif;
+    color: #d8d5d8;
+    font-weight: 600;
+    justify-self: center;
+    align-self: end;
+    margin-top: 0;
+    border-bottom: 1px solid gray;
+    font-size: 1.6rem;
+    
+}
+.table_head{
+    height: 100px;
+}
+.classes_taught_off{
+display: none;
+}
+
+.instructor_table{
+    grid-column: 2/3;
+
+    
+}
+.headshot_td{
+    width: 100px;
+    border-bottom: 1px solid gray;
+}
+ thead{
+     height: 80px;
+ }
+
+.headshot_small{
+    height: auto;
+    width: 91%;
+    border-radius: 25%;
+}
+
+.headshot_select{
+    height: 90px;
+    width: auto;
+
+}
+.instructor_rows{
+ height: 80px;  
+ background-color: #4b453a;
+ border-bottom: 1px solid gray;
+ }
+
+ .instructor_rows:hover {
+    height: 80px;  
+    background-color: #57495a;
+    border-bottom: 1px solid gray;
+    }
+   
+
+ table td {
+    padding: 0;
+}
+
+.instructor_rows_bio{
+
+    height: 180px;  
+    background-color: #4b453a;    
+    border-bottom: 1px solid gray;
+   }
+   .small_bio_on{
+    font-family: "brother-1816",sans-serif;
+    color: #d8d5d8;
+    font-weight: 100;
+    justify-self: center;
+    align-self: end;
+    margin-top: 0;
+    font-size: 1.26rem;
+    border-bottom: 1px solid gray;
+    padding-right: 10%;
+}
+    
+   .small_bio_off{
+       display: none;
+       border-bottom: 1px solid gray;
+    }
+
+.instructors_style_head{
+    grid-row: 1/2;
+    padding-bottom: 0;
+    font-family: lust-script-display, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    justify-self: right;
+    margin-right: 20px;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+
+   }
+   .headshot_turned{
+   transform: rotate(20deg);
+   height: 70px;
+   width: auto;
+   border-radius: 25%;
+   }
+   .instructor_list_small{
+       display: inline;
+   }
+   .instructor_list_large{
+       display: none;
+   }
+   .big_bio{
+       display: none;
+   }
+   @media only screen and (min-width : 600px) {
+    
+    .instructor_list_small{
+        display: none;
+    }
+    .instructor_list_large{
+        display: inline;
+    }
+   
+    
+    .instructors_page{
+    
+        background: linear-gradient(to bottom right, #e222e4, #000000);
+     height: 133vh;
+    }
+    .instructors{
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 100%;
+       
+    }
+
+    .instructors_style_head{
+        grid-row: 1/2;
+        padding-bottom: 0;
+        font-family: lust-script-display, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        justify-self: right;
+        margin-right: 20px;
+        text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+    
+       }
+       .instructor_table{
+        grid-column: 3/-2;
+        justify-self: left;
+        z-index: 2;
+       }
+
+       .small_bio_on{
+        padding-right: 35%;
+       }
+}
