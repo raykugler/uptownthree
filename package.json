@@ -2,6 +2,9 @@
   "name": "dance-studio-app",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "10.6.0"
+  },
   "author": "Ray",
   "license": "MIT",
   "scripts": {
@@ -25,7 +28,6 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "graphql": "^0.11.0",
     "graphql-tag": "^2.9.2",
-    "node-sass": "^4.9.0",
     "normalize": "^0.3.1",
     "normalize.css": "7.0.0",
     "react": "16.0.0",
