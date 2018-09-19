@@ -26,11 +26,11 @@ class Modern extends React.Component {
         <High_Style resetChoice= {this.props.resetChoice} instructor={this.state.instructor}/> 
         
         <p className='style_name'>Modern</p>
-        <img src={'/images/dance_images/modern.jpg'} className='big_style_image modern_adjust'/>
+        <img src={'/images/dance_images/modern.png'} className='big_style_image modern_adjust'/>
        
         
         <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
-        <Small_Menu resetChoice={this.props.resetChoice}/>
+        
         
         </div>    
     );}

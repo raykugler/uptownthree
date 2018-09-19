@@ -28,12 +28,11 @@ class Belly extends React.Component {
             <High_Style instructor={this.state.instructor}/> 
             
             <p className='style_name'>Belly</p>
-            <img src={'/images/dance_images/belly.jpg'} className='big_style_image belly_adjust'/>
+            <img src={'/images/dance_images/belly.png'} className='big_style_image belly_adjust'/>
            
             
             <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
            
-            <Small_Menu resetChoice={this.props.resetChoice}/>
             </div>    
         );}
         

@@ -12,9 +12,14 @@ class Instructor_List extends React.Component {
         }
     }
     addBio=(e)=>{
+        if (this.state.bio === 'none'){
      this.setState({bio: e})
      console.log({e})
      console.log(this.state.bio)
+        }
+        else{
+            this.setState({bio: 'none'})
+        }
      
     }
     render(teachers){
@@ -22,22 +27,32 @@ class Instructor_List extends React.Component {
  
         <Query query={Q_Instructors} variable={{teachers}}  >
         {({loading, error, data}) =>{
-           if (loading) return <tr><td>Loading...</td></tr>
-           if (error) return <tr><td>Error:</td></tr>
+           if (loading) return <li>Loading...</li>
+           if (error) return <li>Error:</li>
            return data.teachers.map(({theirPhoto,teacherBio,classesTaught, teacherName, id, teacher }) => (
-            <tr key={id} className={this.state.bio === id ? 'instructor_rows_bio' : 'instructor_rows'}>
-            <td className='headshot_td'>
-            <img key={id} src={`${theirPhoto.url}`} className={this.state.bio === id ? 'headshot_select' : 'headshot_small'} onClick={e =>this.addBio(id)}/>
-            </td>
-            <td className={this.state.bio === id ? 'classes_taught_off' : 'classes_taught_on'} onClick={e =>this.addBio(id)}>
+            <li>
+            <ul className={this.state.bio === id ? 'big_sub_list' : 'sub_list'}>
+            <li><img src='./images/arrow.png' className={this.state.bio === id ? 'bio_arrow_down' : 'bio_arrow'}  
+                onClick={e =>this.addBio(id)}/></li>
+            
+                <li key={id} className={this.state.bio === id ? 'instructor_rows_bio' : 'instructor_rows'}>
+            
+            <img key={id} src={`${theirPhoto.url}`} className={this.state.bio === id ? 'headshot_select' : 'headshot_small'} 
+            onClick={e =>this.addBio(id)}/>
+            </li>
+            
+            <li className={this.state.bio === id ? 'classes_taught_off' : 'classes_taught_on'} onClick={e =>this.addBio(id)}>
             {classesTaught}
 
-           </td>
-           <td className={this.state.bio === id ? 'small_bio_on' : 'small_bio_off'}>
+           </li>
+           <li className={this.state.bio === id ? 'small_bio_on' : 'small_bio_off'}  onClick={e =>this.addBio(id)}>
            {teacherBio}
-           </td>
-        
-            </tr>
+           
+           </li>
+           </ul>
+           
+           </li>
+
         ) ); 
     }}
     

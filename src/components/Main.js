@@ -18,7 +18,7 @@ const Main =(props)=> {
     matches ? (
 <Full_Page />
     ) : (
-<div>
+<div className='main'>
         <Cover />            
         <Menu />
 </div>

@@ -1,36 +1,55 @@
 .instructors_page{
-    
-    background: linear-gradient(to bottom right, #e222e4, #000000);
- height: 133vh;
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .instructors{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
     display: grid;
     grid-template-rows: 80px auto auto auto auto 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 25px auto 20px;
     height: 100%;
-   
+   background-color: whitesmoke;
 }
 
 .classes_taught_on{
     font-family: "brother-1816",sans-serif;
-    color: #d8d5d8;
+    color:black;
     font-weight: 600;
     justify-self: center;
     align-self: end;
-    margin-top: 0;
-    border-bottom: 1px solid gray;
+    margin-top: -40px;
+    margin-left: 10px;
+  
+
     font-size: 1.6rem;
     
 }
+.left_side{
+    float: left;
+}
 .table_head{
-    height: 100px;
+    height: 50px;
 }
 .classes_taught_off{
 display: none;
 }
+.sub_list{
+    list-style: none;
+    height: 70px;
+}
+.big_sub_list{
+    list-style: none;
+    height: 120px;
+}   
 
-.instructor_table{
-    grid-column: 2/3;
+.instructor_list{
+  
+    grid-row: 2/-1;
+    list-style: none;
 
     
 }
@@ -41,29 +60,54 @@ display: none;
  thead{
      height: 80px;
  }
-
+.bio_arrow{
+    height: 15px;
+    margin-bottom: -43px;
+   
+    margin-left: -85px;
+    transition: transform .3s;
+}
+.bio_arrow_down{
+    height: 15px;
+    margin-bottom: -67px;
+    margin-left: -85px;
+    transform: rotate(90deg);
+    transition: transform .3s;
+}
+.class_teachers{
+    grid-column: 1/-1;
+    list-style: none;
+    margin-left: 10px;
+    margin-top: -20px;
+    grid-row: 3/4;
+}
 .headshot_small{
     height: auto;
-    width: 91%;
-    border-radius: 25%;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 7px;
+    margin-left: 5px;
+    transition: width .3s;
 }
-
+.class_description_sort{
+    float: right;
+}
 .headshot_select{
-    height: 90px;
-    width: auto;
+    height: auto;
+    width: 90px;
+    margin-left: -57px;
+    margin-top: 9px;
+    transition: width .3s;
 
 }
 .instructor_rows{
- height: 80px;  
- background-color: #4b453a;
- border-bottom: 1px solid gray;
+    height: 60px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-left: -70px;
  }
 
- .instructor_rows:hover {
-    height: 80px;  
-    background-color: #57495a;
-    border-bottom: 1px solid gray;
-    }
+
    
 
  table td {
@@ -72,20 +116,21 @@ display: none;
 
 .instructor_rows_bio{
 
-    height: 180px;  
-    background-color: #4b453a;    
-    border-bottom: 1px solid gray;
+    height: 110px;  
+   
    }
    .small_bio_on{
     font-family: "brother-1816",sans-serif;
-    color: #d8d5d8;
+    
     font-weight: 100;
-    justify-self: center;
-    align-self: end;
-    margin-top: 0;
-    font-size: 1.26rem;
-    border-bottom: 1px solid gray;
+   
+    align-self: start;
+    margin-top: -105px;
+    font-size: 1.2rem;
+    /* border-bottom: 1px solid gray; */
     padding-right: 10%;
+    text-align: end;
+    margin-left: 40px;
 }
     
    .small_bio_off{
@@ -96,27 +141,30 @@ display: none;
 .instructors_style_head{
     grid-row: 1/2;
     padding-bottom: 0;
-    font-family: lust-script-display, sans-serif;
+    font-family: "brother-1816",sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
-    color: white;
+    color: black;
     text-align: center;
     justify-self: right;
     margin-right: 20px;
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
-
+  
+   }
+   .inst_text{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+    font-family: "brother-1816",sans-serif;
+    margin-top: 30px;
+    font-size: 2.6rem;
+    margin-right: 40px;
+    text-align: center;
+  
    }
    .headshot_turned{
    transform: rotate(20deg);

@@ -5,44 +5,34 @@ body{
 {
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20px auto auto auto auto auto;
+    grid-template-rows: 20px 300px 1fr 1fr 1fr 1fr;
     grid-row: 1/-1;
     grid-column: 1/-1;
+    overflow: hidden;
+    height: 1350px;
 }
 .main_image{
     grid-row: 2/3;
     grid-column: 1/-1;
-    width: 102%;
-    height: auto;
-    margin-top: 74px;
+    width: auto;
+    height: 72%;
 }
 .main_title{
-    font-family: lust-script-display, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 7rem;
-    color: white;    
+    font-family: 'brother-1816', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -4px;
+    font-size: 5rem;
+    color: rgb(48, 48, 48);    
     grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-row: 1/2;
     text-align: center;
     align-content: center;
-    margin-top: 0;
+    margin-top: 27px;
     margin-bottom: 0;
     -webkit-transition: left .5s,font-size .5s;
     transition: left 1s, font-size 1s;
     z-index: 1;
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
 }
 .menu_block{
     grid-row: 1/-1;

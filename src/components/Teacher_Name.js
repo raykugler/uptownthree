@@ -13,10 +13,10 @@ render(teachers){
   return( 
   <Query query={Q_Instructors} variable={{teachers}}>
     {({loading, error, data}) =>{
-       if (loading) return <td>Loading...</td>
-       if (error) return <td>Error:</td>
+       if (loading) return <li>Loading...</li>
+       if (error) return <li>Error:</li>
        return data.teachers.filter(teacher => teacher[this.props.classes]).map(({theirPhoto,tango, modern,belly, wedding, salsa, hiphop, swing, teacherName, id }) => (
-        <td className="table_text" key={id}>{`${teacherName}`}</td>
+        <li className="table_text" key={id}>{`${teacherName}`}</li>
       ));
     }}
     </Query>   

@@ -20,23 +20,20 @@ class Instructors extends React.Component {
     render(){
     return(
         <ApolloProvider client={client}>  
-    <div className='instructors_page'>
+    <nav className='instructors_page'>
     <div className='instructors'>
-    <table className='instructor_table' cellSpacing="0">
-    <thead>
-    <tr className='table_head'><td colSpan="2" className="instructors_style_head">Instructors</td></tr>
-    </thead>
-    <tbody>
+    <p className='table_head inst_text'>Instructors </p>
+    
+    <ul className='instructor_list' cellSpacing="0">
+    
 
     <Instructor_List />
-    </tbody>
     
-    </table>
+    </ul>
     <Typekit kitId="sim6twb" /> 
-    <Small_Menu />
     </div>
     
-    </div>
+    </nav>
     </ApolloProvider>
 );
 

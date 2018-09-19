@@ -1,32 +1,35 @@
 import React from 'react';
 import { Query, renderToStringWithData } from 'react-apollo';
-import Q_Describe from './Q_Description';
+import Q_Description from './Q_Description';
 
 class Style_Description extends React.Component{
     constructor(props){
         super(props)
+        this.state={
+            classChoice: 'none',
+        }
     }
+ 
+
+
     
 render(classDescriptions){
-    return(    <Query query={Q_Describe} variable={{classDescriptions}}>
+    return(    <Query query={Q_Description} variable={{classDescriptions}}>
     {({loading, error, data}) =>{
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error:</p>
-       return  data.classDescriptions.map(({theDescription, classStyle, id}) =>(
-      <div  key={id} className='description'>{classStyle === this.props.style ? (
-
-        <p >
-        
+    if (loading) return <li>Loading...</li>
+    if (error) return <li>Error:</li>
+       return  data.classDescriptions.filter(classDescription => classDescription[this.props.classes]).map(({theDescription, classStyle, id}) =>(
+      
+        <li  key={id} className='description'>
             {`${theDescription}`} 
-    </p>):null}
- 
- </div> )  
-       );
+        </li>
+
+       ));
     
     }}
    
     </Query>
          
-    );
+    )
 }}
     export default Style_Description;

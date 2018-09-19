@@ -9,11 +9,11 @@ class Cover extends React.Component{
     
     render(){
     return(
-<div className='main'>
+<header className='header' >
    
-<p className='main_title'>
+<h1 className='main_title'>
 
-          Uptown <br/>   Dance</p>
+          Uptown Dance</h1>
          <Typekit kitId="sim6twb" />     
          
          <div className='bar'></div>
@@ -25,7 +25,7 @@ class Cover extends React.Component{
           
          
          
-</div>
+</header>
           
     );}
 }

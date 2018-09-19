@@ -2,7 +2,7 @@ import React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
 
-import Dance_Styles_List from './Dance_Styles_List';
+import New_Styles_List from './New_Styles_List';
 
 const client = new ApolloClient({
     uri: "https://api-uswest.graphcms.com/v1/cjkb8en5w1x2j01d2buf11dvk/master"
@@ -18,9 +18,9 @@ class Dance_Styles extends React.Component{
     <ApolloProvider client={client}>    
     <div>
     
-    <Dance_Styles_List />
+    <New_Styles_List style_decision={this.props.style_decision} close={this.props.close}/>
   
-        
+    
     </div>
     </ApolloProvider>
     );

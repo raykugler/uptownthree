@@ -32,7 +32,7 @@ class Wedding extends React.Component {
             
             <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
            
-            <Small_Menu resetChoice={this.props.resetChoice}/>
+            
             </div>    
         );}
         

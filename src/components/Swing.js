@@ -29,11 +29,11 @@ class Swing extends React.Component {
         <High_Style resetChoice= {this.props.resetChoice} instructor={this.state.instructor}/> 
         
         <p className='style_name'>Swing</p>
-        <img src={'/images/dance_images/swing.jpg'} className='big_style_image swing_adjust'/>
+        <img src={'/images/dance_images/swing.png'} className='big_style_image swing_adjust'/>
        
         
         <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
-        <Small_Menu resetChoice={this.props.resetChoice}/>
+        
         
         </div>    
     );}

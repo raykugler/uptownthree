@@ -1,7 +1,10 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import Q_Instructors from './Q_Instructors';
-
+import ApolloClient from 'apollo-boost';
+const client = new ApolloClient({
+    uri: "https://api-uswest.graphcms.com/v1/cjkb8en5w1x2j01d2buf11dvk/master"
+  });
 class Teachers extends React.Component{
     constructor(props){
         super(props)
@@ -9,19 +12,20 @@ class Teachers extends React.Component{
 }
     
 
-
-
  render(teachers){
      return(
     <Query query={Q_Instructors} variable={{teachers}}  >
     {({loading, error, data}) =>{
-       if (loading) return <td>Loading...</td>
-       if (error) return <td>Error:</td>
-       return data.teachers.filter(teacher => teacher[this.props.classes]).map(({theirPhoto,tango, modern,belly, wedding, salsa, hiphop, swing, teacherName, id }) => (
-        <td key={id}>
+       if (loading) return <li>Loading...</li>
+       if (error) return <li>Error:</li>
+       return data.teachers.filter(teacher => teacher[this.props.classes]).map(({theirPhoto, teacherName, id }) => (
+        
+        <li key={id} className='headshot_li table_text'>
 
         <img key={id} src={`${theirPhoto.url}`}  className='headshot' onClick={e =>this.props.setBio(id)}/>
-        </td>
+        
+        {`${teacherName}`}
+        </li>
        ) ); 
     }}
     

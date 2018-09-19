@@ -9,12 +9,12 @@ class Schedule_Button extends React.Component{
 }
 render(){
     return(
-        <Link to='/teachers' className='schedule_mod_button menu_button'>
+        <div className='schedule_mod_button menu_button'>
         <img src={'images/scheduleicon.png'} className='schedule_menu_button button_image'/>
         <img src={'images/schedule_button.png'} className='big_schedule_image big_button_image'/>
         <p className='button_text'>Class Schedule</p>
         <Typekit kitId="sim6twb" /> 
-        </Link>
+        </div>
     )
 };}
 export default Schedule_Button;
