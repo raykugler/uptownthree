@@ -30,7 +30,7 @@ class Instructor_List extends React.Component {
            if (loading) return <li>Loading...</li>
            if (error) return <li>Error:</li>
            return data.teachers.map(({theirPhoto,teacherBio,classesTaught, teacherName, id, teacher }) => (
-            <li>
+            <li onClick={e =>this.addBio(id)}>
             <ul className={this.state.bio === id ? 'big_sub_list' : 'sub_list'}>
             <li><img src='./images/arrow.png' className={this.state.bio === id ? 'bio_arrow_down' : 'bio_arrow'}  
                 onClick={e =>this.addBio(id)}/></li>

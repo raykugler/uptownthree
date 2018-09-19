@@ -12,10 +12,12 @@ body{
     height: 1350px;
 }
 .main_image{
-    grid-row: 2/3;
+    grid-row: 2/7;
     grid-column: 1/-1;
     width: auto;
-    height: 72%;
+    height: 100%;
+    justify-self: center;
+    align-items: center;
 }
 .main_title{
     font-family: 'brother-1816', sans-serif;
@@ -32,7 +34,7 @@ body{
     margin-bottom: 0;
     -webkit-transition: left .5s,font-size .5s;
     transition: left 1s, font-size 1s;
-    z-index: 1;
+    z-index: 0;
 }
 .menu_block{
     grid-row: 1/-1;
