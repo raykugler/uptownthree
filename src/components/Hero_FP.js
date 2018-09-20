@@ -10,7 +10,7 @@ class Hero_FP extends React.Component{
         return(
             <div className='hero_fp'>
             <img src='/images/mainimage.png' className='hero_image'/>
-            <p className='main_text_fp'>Uptown <br/> Dance</p>
+            <p className='main_text_fp'>Uptown Dance</p>
             <Typekit kitId="sim6twb" /> 
             </div>
 

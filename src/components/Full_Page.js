@@ -38,7 +38,6 @@ class Full_Page extends React.Component{
         <Instructor_FP />
         <FP_Dance_List />
         <FP_Footer />
-        <img src='images/top_button.png' className='topbutton' onClick={this.toTop}/>
         </div>
     )
 }
