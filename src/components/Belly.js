@@ -31,7 +31,7 @@ class Belly extends React.Component {
             <img src={'/images/dance_images/belly.png'} className='big_style_image belly_adjust'/>
            
             
-            <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
+            <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes} close={this.props.close} />
            
             </div>    
         );}

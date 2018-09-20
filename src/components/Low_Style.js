@@ -9,6 +9,7 @@ class Low_Style extends React.Component{
         super(props)
     };
 
+  
     render(){
         return(
 
@@ -19,7 +20,9 @@ class Low_Style extends React.Component{
             </li>
            
             <Style_Description style={this.props.style} classes={this.props.classes}/>
-            
+            <button onClick={this.props.close} className='low_close_button'>
+            <img src='images/back.png' className='low_back_icon' />
+            <p className='low_close_text'> All Styles </p> </button>
     
             
             </ul>        )

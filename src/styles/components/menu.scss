@@ -212,41 +212,11 @@
     text-align: center;
 }
 .close_button{
-    display: inline-block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    float: none;
-    z-index: 7;
-    width: 0.22em;
-    height: 0.22em;
-    position: absolute;
-    top: 13px;
-    left: 13px;
-    cursor: default;
-    opacity: 1;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
-    border: none;
-    -webkit-border-radius: 1em;
-    border-radius: 1em;
-    font: normal 8em/normal Arial, Helvetica, sans-serif;
-    color: black;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: #c74486;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-shadow: none;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transform-origin: 50% 50% 0;
-    transform-origin: 50% 50% 0;
+   grid-column: 1/2;
+   grid-row: 1/2;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .close_x{

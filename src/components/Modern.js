@@ -28,8 +28,8 @@ class Modern extends React.Component {
         <p className='style_name'>Modern</p>
         <img src={'/images/dance_images/modern.png'} className='big_style_image modern_adjust'/>
        
-        
-        <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
+         
+        <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes} close={this.props.close} />
         
         
         </div>    

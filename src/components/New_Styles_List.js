@@ -21,7 +21,6 @@ import Belly from './Belly.js';
           componentDidMount() {
             window.scrollTo(0,0);
         }
-                 
        
        resetChoice = () => { 
            this.setState({ choice: 0 });
@@ -35,23 +34,23 @@ if (this.props.style_decision === 1){
 }
 else if
     (this.props.style_decision === 2){
-        style_choice = <Tango />
+        style_choice = <Tango close={this.props.close} />
     }
     else if
     (this.props.style_decision === 3){
-        style_choice = <HipHop />
+        style_choice = <HipHop close={this.props.close} />
     }else if
     (this.props.style_decision === 4){
-        style_choice = <Modern />
+        style_choice = <Modern close={this.props.close} />
     }else if
     (this.props.style_decision === 5){
-        style_choice = <Swing />
+        style_choice = <Swing close={this.props.close} />
     }else if
     (this.props.style_decision === 6){
-        style_choice = <Wedding />
+        style_choice = <Wedding close={this.props.close}  />
     }else if
     (this.props.style_decision === 7){
-        style_choice = <Belly />
+        style_choice = <Belly close={this.props.close}  />
     }
 
  

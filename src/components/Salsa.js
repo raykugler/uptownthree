@@ -33,7 +33,7 @@ class Salsa extends React.Component {
             <img src={'/images/dance_images/salsa.png'} className='big_style_image salsa_adjust'/>
            
             
-            <Low_Style close={this.props.close} style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
+            <Low_Style close={this.props.close} style={this.state.style} setBio={this.setBio} classes={this.state.classes} close={this.props.close} />
           
             
             </div>    

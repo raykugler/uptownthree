@@ -30,7 +30,7 @@ class Wedding extends React.Component {
             <img src={'/images/dance_images/wedding.png'} className='big_style_image wedding_adjust'/>
            
             
-            <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
+            <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes} close={this.props.close} />
            
             
             </div>    

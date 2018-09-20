@@ -94,7 +94,7 @@ close=()=>{
             >
 
                 <Style_Modal   
-                     close={this.props.close}
+                     close={this.close}
                     style_decision ={this.state.style_decision}
                     styleChoice={this.styleChoice}
                     choice={this.state.choice}
@@ -102,7 +102,7 @@ close=()=>{
                     onRequestClose={this.close}
                  
                   />
-                  <button onClick={this.close} className='close_button'><p className='close_x'>X</p></button>
+                  
         </Modal>
        </nav>
        </div>

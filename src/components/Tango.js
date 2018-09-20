@@ -40,7 +40,7 @@ class Tango extends React.Component {
         <img src={'/images/dance_images/tango.png'} className='big_style_image'/>
        
         
-        <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes} />
+        <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes} close={this.props.close} />
             
         </div>    
     );}

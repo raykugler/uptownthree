@@ -19,7 +19,7 @@ class Dance_Styles extends React.Component{
     <div>
     
     <New_Styles_List style_decision={this.props.style_decision} close={this.props.close}/>
-  
+
     
     </div>
     </ApolloProvider>
@@ -28,21 +28,3 @@ class Dance_Styles extends React.Component{
 
 export default Dance_Styles;
 
-/*
-
-<img src={'/images/one_screen.jpg'}className='block style_image_one_screen'/>
-    
-class Dance_Styles extends React.Component {
-    state = { 
-           condition: false 
-         };
-     handleClick= ()=> {
-       this.setState(()=>({condition: !this.state.condition}));
-     }
-  render(){
-      
-    <img src={'/images/dance_images/salsa.jpg'}className='block style_image_one'/>
-        <img src={'/images/one_screen.jpg'}className='block style_image_one_screen'/>
-        
-    
-    */
