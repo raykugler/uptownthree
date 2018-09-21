@@ -21,9 +21,9 @@ class FP_Belly extends React.Component {
         render(){
         return(  
             <div className='fp_full_style'>
-            <div className='fp_dance_style_head_fade'>Dance Styles</div>
+            <h2 className='fp_dance_style_head_fade'>Dance Styles</h2>
             <FP_Left_Menu style={this.state.style} setBio={this.setBio} classes={this.state.classes}/>
-            <p className='fp_style_name'>Belly</p>
+            <h3 className='fp_style_name'>Belly</h3>
             <img src={'/images/dance_images/belly.png'} className='fp_big_style_image fp_salsa_adjust'/>
             <FP_Right_Menu resetChoice= {this.props.resetChoice} instructor={this.state.instructor}/>
             

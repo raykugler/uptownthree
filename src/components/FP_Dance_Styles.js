@@ -87,45 +87,45 @@ import FP_Belly from './FP_Belly.js';
     return  (  
     <div className='fp_dance_styles_page'>
     
-    <div className='fp_styles_menu'>
-    <div className={this.state.choice !== 0 ? 'fp_dance_style_head_fade' : 'fp_dance_style_head'} >Dance Styles</div>
-    <div className='fp_block_one fp_curved-edges' onClick={ e => this.styleChoice(1)}>
-        <p className='fp_style_block_text' ref='salsa'>Salsa</p>
+    <nav className='fp_styles_menu'>
+    <h2 className={this.state.choice !== 0 ? 'fp_dance_style_head_fade' : 'fp_dance_style_head'} >Dance Styles</h2>
+    <button className='fp_block_one fp_curved-edges' onClick={ e => this.styleChoice(1)}>
+        <h2 className='fp_style_block_text' ref='salsa'>Salsa</h2>
         <img src={'/images/dance_images/salsa.png'}className='fp_block fp_style_image_one'/>
-    </div>
+    </button>
     
-    <div className='fp_block_two fp_curved-edges'  onClick={ e => this.styleChoice(2)}>
-        <p className='fp_style_block_text'>Tango</p>
+    <button className='fp_block_two fp_curved-edges'  onClick={ e => this.styleChoice(2)}>
+        <h2 className='fp_style_block_text'>Tango</h2>
         <img src={'/images/dance_images/tango.png'}className='fp_block fp_style_image_two'/>
-    </div>
+    </button>
     
-    <div className='fp_block_three fp_curved-edges' onClick={ e => this.styleChoice(3)}>
-        <p className='fp_style_block_text'>Hip Hop</p>
+    <button className='fp_block_three fp_curved-edges' onClick={ e => this.styleChoice(3)}>
+        <h2 className='fp_style_block_text'>Hip Hop</h2>
         <img src={'/images/dance_images/hiphop.png'}className='fp_block fp_style_image_three'/>
-    </div>
+    </button>
 
-    <div className='fp_block_four fp_curved-edges' onClick={ e => this.styleChoice(4)}>
-        <p className='fp_style_block_text'>Modern</p>
+    <button className='fp_block_four fp_curved-edges' onClick={ e => this.styleChoice(4)}>
+        <h2 className='fp_style_block_text'>Modern</h2>
         <img src={'/images/dance_images/modern.png'}className='fp_block fp_style_image_four'/>
-    </div>
+    </button>
 
-    <div className='fp_block_five fp_curved-edges' onClick={ e => this.styleChoice(5)}>
-        <p className='fp_style_block_text'>Swing</p>
+    <button className='fp_block_five fp_curved-edges' onClick={ e => this.styleChoice(5)}>
+        <h2 className='fp_style_block_text'>Swing</h2>
         <img src={'/images/dance_images/swing.png'}className='fp_block fp_style_image_five'/>
-    </div>
+    </button>
     
-    <div className='fp_block_six fp_curved-edges' onClick={ e => this.styleChoice(6)}>
-        <p className='fp_style_block_text'>Wedding</p>
+    <button className='fp_block_six fp_curved-edges' onClick={ e => this.styleChoice(6)}>
+        <h2 className='fp_style_block_text'>Wedding</h2>
         <img src={'/images/dance_images/wedding.png'}className='fp_block fp_style_image_six'/>
-    </div>
+    </button>
 
-    <div className='fp_block_seven fp_curved-edges' onClick={ e => this.styleChoice(7)}>
-        <p className='fp_style_block_text'>Belly</p>
+    <button className='fp_block_seven fp_curved-edges' onClick={ e => this.styleChoice(7)}>
+        <h2 className='fp_style_block_text'>Belly</h2>
         <img src={'/images/dance_images/belly.png'}className='fp_block fp_style_image_seven'/>
-    </div>
+    </button>
 
     <Typekit kitId="sim6twb" /> 
-    </div>
+    </nav>
    
     </div>
 );

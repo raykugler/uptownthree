@@ -88,40 +88,40 @@ import Small_Menu from './Small_Menu';
     
    
     <div className='styles_menu'>
-    <div className='dance_style_head'>Dance Styles</div>
+    <h2 className='dance_style_head'>Dance Styles</h2>
     <div className='block_one curved-edges' onClick={ e => this.styleChoice(1)}>
-        <p className='style_block_text' ref='salsa'>Salsa</p>
-        <img src={'/images/dance_images/salsa.jpg'}className='block style_image_one'/>
+        <h2 className='style_block_text' ref='salsa'>Salsa</h2>
+        <img src={'/images/dance_images/salsa.jpg'} className='block style_image_one'/>
     </div>
     
     <div className='block_two curved-edges'  onClick={ e => this.styleChoice(2)}>
-        <p className='style_block_text'>Tango</p>
-        <img src={'/images/dance_images/tango.jpg'}className='block style_image_two'/>
+        <h2 className='style_block_text'>Tango</h2>
+        <img src={'/images/dance_images/tango.jpg'} className='block style_image_two'/>
     </div>
     
     <div className='block_three curved-edges' onClick={ e => this.styleChoice(3)}>
-        <p className='style_block_text'>Hip Hop</p>
-        <img src={'/images/dance_images/hiphop.jpg'}className='block style_image_three'/>
+        <h2 className='style_block_text'>Hip Hop</h2>
+        <img src={'/images/dance_images/hiphop.jpg'} className='block style_image_three'/>
     </div>
 
     <div className='block_four curved-edges' onClick={ e => this.styleChoice(4)}>
-        <p className='style_block_text'>Modern</p>
-        <img src={'/images/dance_images/modern.jpg'}className='block style_image_four'/>
+        <h2 className='style_block_text'>Modern</h2>
+        <img src={'/images/dance_images/modern.jpg'} className='block style_image_four'/>
     </div>
 
     <div className='block_five curved-edges' onClick={ e => this.styleChoice(5)}>
-        <p className='style_block_text'>Swing</p>
-        <img src={'/images/dance_images/swing.jpg'}className='block style_image_five'/>
+        <h2 className='style_block_text'>Swing</h2>
+        <img src={'/images/dance_images/swing.jpg'} className='block style_image_five'/>
     </div>
     
     <div className='block_six curved-edges' onClick={ e => this.styleChoice(6)}>
-        <p className='style_block_text'>Wedding</p>
-        <img src={'/images/dance_images/wedding.png'}className='block style_image_six'/>
+        <h2 className='style_block_text'>Wedding</h2>
+        <img src={'/images/dance_images/wedding.png'} className='block style_image_six'/>
     </div>
 
     <div className='block_seven curved-edges' onClick={ e => this.styleChoice(7)}>
-        <p className='style_block_text'>Belly</p>
-        <img src={'/images/dance_images/belly.jpg'}className='block style_image_seven'/>
+        <h2 className='style_block_text'>Belly</h2>
+        <img src={'/images/dance_images/belly.jpg'} className='block style_image_seven'/>
     </div>
 
     <Typekit kitId="sim6twb" /> 

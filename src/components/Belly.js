@@ -27,7 +27,7 @@ class Belly extends React.Component {
             <div className='big_style_grid'  >
             <High_Style instructor={this.state.instructor}/> 
             
-            <p className='style_name'>Belly</p>
+            <h2 className='style_name'>Belly</h2>
             <img src={'/images/dance_images/belly.png'} className='big_style_image belly_adjust'/>
            
             

@@ -13,7 +13,7 @@ const Main =(props)=> {
    
      return(
 <div>
-<Media query="(min-width: 600px)">
+<Media query="(min-width: 950px)">
 {matches => 
     matches ? (
 <Full_Page />

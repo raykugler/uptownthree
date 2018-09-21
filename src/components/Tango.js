@@ -37,7 +37,7 @@ class Tango extends React.Component {
        <High_Style resetChoice= {this.props.resetChoice} instructor={this.state.instructor}/>
         
         <p className='style_name'>Tango</p>
-        <img src={'/images/dance_images/tango.png'} className='big_style_image'/>
+        <img src={'/images/dance_images/tango.png'} className='big_style_image tango_adjust'/>
        
         
         <Low_Style style={this.state.style} setBio={this.setBio} classes={this.state.classes} close={this.props.close} />

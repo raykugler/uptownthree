@@ -14,14 +14,14 @@ render(classDescriptions){
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error:</p>
        return  data.classDescriptions.map(({theDescription, classStyle, id}) =>(
-      <div  key={id} className='fp_description'>{classStyle === this.props.style ? (
+      <li  key={id} className='fp_description'>{classStyle === this.props.style ? (
 
         <p >
         
             {`${theDescription}`} 
     </p>):null}
  
- </div> )  
+ </li> )  
        );
     
     }}

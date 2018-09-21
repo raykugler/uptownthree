@@ -15,13 +15,16 @@ class FP_Teachers extends React.Component{
      return(
     <Query query={Q_Instructors} variable={{teachers}}  >
     {({loading, error, data}) =>{
-       if (loading) return <td>Loading...</td>
-       if (error) return <td>Error:</td>
+       if (loading) return <li>Loading...</li>
+       if (error) return <li>Error:</li>
        return data.teachers.filter(teacher => teacher[this.props.classes]).map(({theirPhoto,tango, modern,belly, wedding, salsa, hiphop, swing, teacherName, id }) => (
         
-        <td key={id}>
+        <ul key={id} className='headshot_list'>
+        <li className='headshot_list_item'>
         <img key={id} src={`${theirPhoto.url}`}  className='headshot' onClick={e =>this.props.setBio(id)}/>
-        </td>
+        <li className="fp_table_text" key={id} >{`${teacherName}`}</li>
+        </li>
+        </ul>
         
        ) ); 
     }}

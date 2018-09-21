@@ -56,14 +56,17 @@ float: right;
 }
 
 .low_close_button{
-    grid-column: -3/-2;
-    grid-row: 4/5;
+    grid-column: 1/-1;
+    grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     color: black;
     width: 128px;
     height: 30px;
+    justify-self: center;
+    align-items: start;
+    margin-top: -10%;
 }
 
 .low_back_icon{
@@ -143,6 +146,13 @@ float: right;
     justify-self: center;
 }
 
+.hip_hop_image{
+    margin-left: 370px;
+}
+
+.tango_adjust{
+    margin-left: 440px;
+}
 
 
 

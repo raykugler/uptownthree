@@ -16,7 +16,9 @@ render(teachers){
        if (loading) return <li>Loading...</li>
        if (error) return <li>Error:</li>
        return data.teachers.filter(teacher => teacher[this.props.classes]).map(({theirPhoto,tango, modern,belly, wedding, salsa, hiphop, swing, teacherName, id }) => (
+        <ul className='teacher_name_list'>
         <li className="table_text" key={id}>{`${teacherName}`}</li>
+        </ul>
       ));
     }}
     </Query>   

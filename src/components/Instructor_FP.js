@@ -20,18 +20,12 @@ class Instructor_FP extends React.Component{
             <ApolloProvider client={client}>
             <div className='instructor_fp' id='teachers'>
             <p className='instructors_fp_style'>Instructors</p>
-            <table className='fp_instructor_table' cellSpacing="0">
-    <thead>
-    </thead>
-    <tbody>
-    <tr>
-    <FP_Instructors_List />
-    
-    
-    <FP_Teacher_Name />
-    </tr>
-    </tbody>
-            </table>
+            <ul className='fp_instructor_table' cellSpacing="0">
+                
+                    <FP_Instructors_List />
+                    <FP_Teacher_Name />
+                    
+            </ul>
             <Typekit kitId="sim6twb" /> 
             </div>
             </ApolloProvider>

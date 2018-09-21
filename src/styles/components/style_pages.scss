@@ -3,41 +3,35 @@
     height: auto;
     -webkit-clip-path: polygon(0% 14%, 53% 14%, 53% 45%, 0% 45%);
     clip-path: polygon(0% 0%, 53% 0%, 53% 100%, 0% 100%);
-    margin-left: -220px;
-    margin-top: -22px;
+    /* margin-left: 480px; */
+    /* margin-top: -22px; */
     grid-column: 1/-1;
     grid-row: 1/-1;
+    justify-self: center;
 }
 
 .swing_adjust{
 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-margin-left: -404px;
-margin-top: -22px;
 }
 
 .salsa_adjust{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-left: -387px;
-    margin-top: -22px;
+   
 }
 
 .modern_adjust{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-left: -506px;
-    margin-top: -22px;
+
 }
 
 .wedding_adjust{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-left: -422px;
-    margin-top: -50px;
+   
 
 }
 
 .belly_adjust{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    margin-left: -391px;
-    margin-top: -23px;
 }
 
 .big_style_grid{

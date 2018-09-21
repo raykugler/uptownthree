@@ -13,24 +13,12 @@ class FP_Left_Menu extends React.Component{
         return(
             <div className='fp_left_menu'>
             <div className='fp_left_overlay'></div>
-            <div className='fp_teacher_list'>
-            <table>
-            <tbody>
-            <tr>
+            <ul className='fp_teacher_list'>
             <FP_Teachers  style={this.props.style} setBio={this.props.setBio} classes={this.props.classes}/>
-            </tr>
-            <tr>
-            <FP_Teacher_Name classes={this.props.classes} />
-            </tr>
-            </tbody>
-            </table>
+            </ul>
+           
             <FP_Style_Description style={this.props.style}/>
-            <div className='fp_schedule_button'>
-            <a href="https://www.schedulicity.com/scheduling/SYL6WN/classes"  title="Online scheduling" target="_blank">
-            <img src="//cdn.schedulicity.com/images/schedulenow_dk_red2_md.png" alt="Online scheduling" title="Online scheduling"  border="0" />
-            </a>
-            </div>
-              </div>
+           
             
             </div>
         )

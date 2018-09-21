@@ -11,7 +11,7 @@ class Find_Us extends React.Component{
     return(
         <div className='find_us_page'>
  <div className='find_us_grid'>
- <p className='find_us_title'> Find Us </p>
+ <h2 className='find_us_title'> Find Us </h2>
  <img src={'images/map.png'} className='big_map' />
  <p className='big_address'> 200 Broad Street<br/> Seattle, WA<br/><br/> 1-800-DANCING</p>
     

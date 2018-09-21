@@ -19,17 +19,18 @@ render(teachers){
     return(
         <Query query={Q_Instructors} variable={{teachers}}  >
         {({loading, error, data}) =>{
-           if (loading) return <td>Loading...</td>
-           if (error) return <td>Error:</td>
+           if (loading) return <li>Loading...</li>
+           if (error) return <li>Error:</li>
            return data.teachers.map(({theirPhoto,teacherBio,classesTaught, teacherName, id, teacher }) => (
             
-            <td key={id} className='fp_headshot_td'>
-            
+            <ul key={id} className='fp_headshot_td'>
+            <li>
             <img key={id} src={`${theirPhoto.url}`} className='fp_headshot_small'/>
-            
-            
+            </li>                
+            <li>
             <a className='fp_small_bio_on'>{teacherBio}</a>
-            </td>
+            </li>
+            </ul>
             ))
 }}
 </Query>
