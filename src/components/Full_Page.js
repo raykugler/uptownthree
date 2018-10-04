@@ -32,13 +32,13 @@ class Full_Page extends React.Component{
 
        render(){
     return(
-        <div className='full_page'>
+        <main className='full_page'>
         <FP_Menu footer={this.footer} teachers={this.teachers} styles={this.styles}/> 
         <Hero_FP />
         <Instructor_FP />
         <FP_Dance_List />
         <FP_Footer />
-        </div>
+        </main>
     )
 }
 

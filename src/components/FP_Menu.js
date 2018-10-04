@@ -12,8 +12,9 @@ class FP_Menu extends React.Component{
     render(){
         return(
             <nav className='fp_menu' id='menu' >
-                <button className='fp_styles_button' onClick={this.props.styles}>
-                    <p className='fp_menu_text'> Styles </p> 
+            <nav className='page_nav'>
+                   <button className='fp_styles_button' onClick={this.props.styles}>
+                   <p className='fp_menu_text'> Styles </p> 
                 </button>
             
                 <button className='fp_teachers_button' onClick={this.props.teachers}>
@@ -24,7 +25,8 @@ class FP_Menu extends React.Component{
                     <p className='fp_menu_text'> Find Us </p> 
                 </button>
                 <Typekit kitId="sim6twb" /> 
-                <nav className='soc_me'>
+            </nav>
+            <nav className='soc_me'>
                 <button className='soc_button'>
                 <img src='images/soc_twitter.png' className='fp_soc_icon' />
                 </button>
@@ -37,9 +39,9 @@ class FP_Menu extends React.Component{
                 <button className='soc_button'>
                 <img src='images/soc_snapchat.png' className='fp_soc_icon' />
                 </button>
-                </nav>
+            </nav>
 
-                </nav>
+            </nav>
         )
     }
 }
